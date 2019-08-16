@@ -1,0 +1,18 @@
+{
+   "name": "mini-css-library",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "start": "node-sass -w styles.scss css/styles.css",
+      "build": "node-sass styles.scss css/styles.css",
+      "optimize": "postcss css/styles.css > css/styles.min.css"
+   },
+   "author": "",
+   "license": "ISC",
+   "dependencies": {
+      "cssnano": "^4.1.10",
+      "node-sass": "^4.12.0",
+      "postcss-cli": "^6.1.3"
+   }
+}

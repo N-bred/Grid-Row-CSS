@@ -1,0 +1,103 @@
+// Flex
+
+.d-flex {
+   display: flex;
+}
+
+.d-inline-flex {
+   display: inline-flex;
+}
+
+.f-wrap {
+   flex-wrap: wrap;
+}
+
+.f-nowrap {
+   flex-wrap: nowrap;
+}
+
+.f-row {
+   flex-direction: row;
+}
+
+.f-column {
+   flex-direction: column;
+}
+
+.f-justify-start {
+   justify-content: flex-start;
+}
+
+.f-justify-center,
+.g-justify-center {
+   justify-content: center;
+}
+
+.f-justify-end {
+   justify-content: flex-end;
+}
+
+.f-justify-between,
+.g-justify-between {
+   justify-content: space-between;
+}
+
+.f-justify-evenly,
+.g-justify-evenly {
+   justify-content: space-evenly;
+}
+
+.f-justify-around,
+.g-justify-around {
+   justify-content: space-around;
+}
+
+.f-align-start {
+   align-items: flex-start;
+}
+
+.f-align-center,
+.g-align-center {
+   align-items: center;
+}
+
+.f-align-end {
+   align-items: flex-end;
+}
+
+.f-align-stretch,
+.g-align-stretch {
+   align-items: stretch;
+}
+.f-center {
+   justify-content: center;
+   align-items: center;
+}
+.f-justify-self-start {
+   justify-self: flex-start;
+}
+.f-justify-self-center,
+.g-justify-self-center {
+   justify-self: center;
+}
+.f-justify-self-end {
+   justify-self: flex-end;
+}
+.f-justify-self-stretch,
+.g-justify-self-stretch {
+   justify-self: stretch;
+}
+.f-align-self-start {
+   align-self: flex-start;
+}
+.f-align-self-center,
+.g-align-self-center {
+   align-self: center;
+}
+.f-align-self-end {
+   align-self: flex-end;
+}
+.f-align-self-stretch,
+.g-align-self-stretch {
+   align-self: stretch;
+}

@@ -1,0 +1,67 @@
+// Paddings
+
+@for $i from 1 through 10 {
+   $value: #{$i} * 0.5rem;
+
+   .p-#{$i} {
+      padding: $value;
+   }
+   .pt-#{$i} {
+      padding-top: $value;
+   }
+   .pb-#{$i} {
+      padding-bottom: $value;
+   }
+   .pl-#{$i} {
+      padding-left: $value;
+   }
+   .pr-#{$i} {
+      padding-right: $value;
+   }
+}
+
+// Margins
+
+@for $i from 1 through 10 {
+   $value: #{$i} * 0.5rem;
+
+   .m-#{$i} {
+      margin: $value;
+   }
+   .mt-#{$i} {
+      margin-top: $value;
+   }
+   .mb-#{$i} {
+      margin-bottom: $value;
+   }
+   .ml-#{$i} {
+      margin-left: $value;
+   }
+   .mr-#{$i} {
+      margin-right: $value;
+   }
+}
+
+// Displays
+
+.d-block {
+   display: block;
+}
+
+.d-inline-block {
+   display: inline-block;
+}
+
+// Positional order
+
+@for $i from 0 through 5 {
+   .order-#{$i} {
+      order: $i;
+   }
+}
+
+// Vertical align for inline-elements
+
+.vertical-a-top {
+   vertical-align: top;
+}

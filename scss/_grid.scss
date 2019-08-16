@@ -1,0 +1,82 @@
+// Grid
+
+.grid-row {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+}
+
+.g-center {
+   justify-items: center;
+   align-items: center;
+}
+
+.g-justify-start {
+   justify-items: start;
+}
+
+.g-justify-end {
+   justify-items: end;
+}
+
+@for $i from 1 through 10 {
+   $value: calc(#{$i}* 0.5rem);
+
+   .g-col-gap-#{$i} {
+      grid-column-gap: $value;
+   }
+
+   .g-row-gap-#{$i} {
+      grid-row-gap: $value;
+   }
+
+   .g-gap-#{$i} {
+      grid-gap: $value;
+   }
+}
+
+.grid-column {
+   background: #197ed1;
+   @for $i from 1 through 12 {
+      &.xs-#{$i} {
+         @include for-xs {
+            grid-column: span $i;
+         }
+      }
+   }
+
+   @for $i from 1 through 12 {
+      &.sm-#{$i} {
+         @include for-sm {
+            grid-column: span $i;
+         }
+      }
+   }
+   @for $i from 1 through 12 {
+      &.md-#{$i} {
+         @include for-md {
+            grid-column: span $i;
+         }
+      }
+   }
+   @for $i from 1 through 12 {
+      &.lg-#{$i} {
+         @include for-lg {
+            grid-column: span $i;
+         }
+      }
+   }
+   @for $i from 1 through 12 {
+      &.xl-#{$i} {
+         @include for-xl {
+            grid-column: span $i;
+         }
+      }
+   }
+   @for $i from 1 through 12 {
+      &.xxl-#{$i} {
+         @include for-xxl {
+            grid-column: span $i;
+         }
+      }
+   }
+}

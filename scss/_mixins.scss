@@ -1,0 +1,30 @@
+@mixin for-xxl {
+   @media only screen and (min-width: $xxl) {
+      @content;
+   }
+}
+@mixin for-xl {
+   @media only screen and (min-width: $xl) {
+      @content;
+   }
+}
+@mixin for-lg {
+   @media only screen and (min-width: $lg) {
+      @content;
+   }
+}
+@mixin for-md {
+   @media only screen and (min-width: $md) {
+      @content;
+   }
+}
+@mixin for-sm {
+   @media only screen and (min-width: $sm) {
+      @content;
+   }
+}
+@mixin for-xs {
+   @media only screen and (min-width: $xs) {
+      @content;
+   }
+}
