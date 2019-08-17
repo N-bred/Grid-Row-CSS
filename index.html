@@ -4,8 +4,279 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Gridder CSS</title>
+    <title>Grid Row CSS</title>
+    <meta name="Author" content="Nicolas Caballero" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism-coy.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/gridrow.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <nav class="is-fullwidth pos-fixed nav d-flex f-align-center p-5">
+      <a href="#"><h1>Grid Row CSS</h1></a>
+
+      <form class="ml-auto">
+        <input type="text" placeholder="Search..." class="search-bar p-2" />
+      </form>
+    </nav>
+
+    <div class="container-fluid is-full-size mt-10">
+      <div class="grid-row is-full-size">
+        <div class="grid-column xs-3 mt-5 documentation-bar p-5">
+          <div class="documentation-bar-content pos-fixed ">
+            <h1>Documentation</h1>
+
+            <ul class="mt-5">
+              <li class="mt-5"><a href="#breakpoints">Breakpoints</a></li>
+              <li class="mt-5"><a href="#displays">Displays</a></li>
+              <li class="mt-5"><a href="#sizes">Sizes</a></li>
+              <li class="mt-5"><a href="#flexbox">Flexbox</a></li>
+              <li class="mt-5"><a href="#grid">Grid</a></li>
+              <li class="mt-5"><a href="#utlis">Utils</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid-column xs-9 documentation-text p-5 mt-5">
+          <div class="grid-row">
+            <section
+              class="info-card displays grid-column xs-12 mb-10"
+              id="breakpoints"
+            >
+              <h1 class="mb-5">Breakpoints</h1>
+
+              <p class="mb-5">
+                This library uses a set of breakpoints to work with the
+                responsiveness.
+              </p>
+
+              <ul class="mb-5">
+                <li class="mt-5">
+                  <span class="code-text">xxl:</span> Breakpoint for screens
+                  with a witdh over 1600px
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">xl</span> Breakpoint for screens with
+                  a witdh over 1200px
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">lg</span> Breakpoint for screens with
+                  a witdh over 992px
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">md</span> Breakpoint for screens with
+                  a witdh over 768px
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">sm</span> Breakpoint for screens with
+                  a witdh over 576px
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">xs</span> Breakpoint for screens with
+                  a witdh over 300px
+                </li>
+              </ul>
+            </section>
+            <section
+              class="info-card displays grid-column xs-12 mb-10"
+              id="displays"
+            >
+              <h1 class="mb-5">Displays</h1>
+
+              <p class="mb-5">
+                There are several classes to help you with the display of
+                elements. Their use is pretty simple, just add a class to an
+                element. They also work with the responsive breakpoints of Grid
+                Row CSS
+              </p>
+
+              <ul class="mb-5">
+                <li class="mt-5">
+                  <span class="code-text">.d-block:</span>
+                  Sets the element to display as a block
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.d-inline-block:</span> Sets the
+                  element to display as an inline-block
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.d-flex:</span> Sets the element to
+                  display as a flex
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.d-inline-flex:</span> Sets the
+                  element to display as an inline-flex element
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.d-grid:</span> Sets the element to
+                  display as a grid
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.d-none:</span> Sets the display
+                  propertie to none
+                </li>
+              </ul>
+
+              <h2 class="mb-5">Use with breakpoints</h2>
+
+              <p class="mb-5">
+                You can use breakpoints to decide wether or not to apply a style
+                to the element based on the viewport width.
+              </p>
+
+              <ul class="mb-5">
+                <li class="mt-5">
+                  <span class="code-text">.d-{breakpoint}-block:</span>
+                  Sets the element to display as a block
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.d-{breakpoint}-inline-block:</span>
+                  Sets the element to display as an inline-block
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.d-{breakpoint}-flex:</span> Sets the
+                  element to display as a flex
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.d-{breakpoint}-inline-flex:</span>
+                  Sets the element to display as an inline-flex element
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.d-{breakpoint}-grid:</span> Sets the
+                  element to display as a grid
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.d-{breakpoint}-none:</span> Sets the
+                  display propertie to none
+                </li>
+              </ul>
+
+              <pre class="mb-5 d-block">
+              <code class="language-markup">
+&lt;div class="d-block">Block Element&lt;/div>
+&lt;div class="d-inline-block">Inline block Element&lt;/div>
+&lt;div class="d-flex">Flex Element&lt;/div>
+&lt;div class="d-inline-flex">inline flex Element&lt;/div>
+&lt;div class="d-grid">Grid Element&lt;/div>
+&lt;div class="d-none">Not showing Element&lt;/div>
+&lt;div class="d-xs-none d-sm-block">
+Element that only appears on +576px screens (Rezise your
+brwoser to see it)
+&lt;/div>
+              </code>
+            </pre>
+
+              <div class="example displays">
+                <div class="d-block">Block Element</div>
+                <div class="d-inline-block">Inline block Element</div>
+                <div class="d-flex">Flex Element</div>
+                <div class="d-inline-flex">inline flex Element</div>
+                <div class="d-grid">Grid Element</div>
+                <div class="d-none">Not showing Element</div>
+                <div class="d-xs-none d-sm-block">
+                  Element that only appears on +576px screens (Rezise your
+                  brwoser to see it)
+                </div>
+              </div>
+            </section>
+
+            <section
+              class="info-card displays grid-column xs-12 mb-10"
+              id="sizes"
+            >
+              <h1 class="mb-5">Sizes</h1>
+
+              <p class="mb-5">
+                There are a few classes to help with the height and width of the
+                elements, these classes are:
+              </p>
+
+              <ul class="mb-5">
+                <li class="mt-5">
+                  <span class="code-text">.is-fullwidth:</span> Sets the width
+                  to 100%
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.is-fullheight:</span> Sets the height
+                  to 100%
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.is-half-vh:</span> Sets the height to
+                  50vh
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.is-full-vh:</span> Sets the height to
+                  100vh
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.is-full-size:</span> Sets the height
+                  and width to 100%
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.is-full-size-vh:</span> Sets the
+                  height to 100vh and the width to 100%
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.is-half-size-vh:</span> Sets the
+                  height to 50vh and the width to 100%
+                </li>
+              </ul>
+
+              <pre class="mb-5 d-block">
+              <code class="language-markup">
+&lt;div class="is-fullwidth">Full width Element&lt;/div>
+&lt;div class="is-fullheight">Full height Element&lt;/div>
+&lt;div class="is-half-vh">Half viewport height Element&lt;/div>
+&lt;div class="is-full-vh">Full viewport height Element&lt;/div>
+&lt;div class="is-full-size">Full height and width Element&lt;/div>
+&lt;div class="is-half-size-vh">
+  Half viewport height and full width Element
+&lt;/div>
+&lt;div class="is-full-size-vh">
+  Full viewport height and full width Element
+&lt;/div>
+              </code>
+            </pre>
+
+              <div class="example sizes">
+                <div class="is-fullwidth d-flex f-center">
+                  Full width Element
+                </div>
+                <div class="is-fullheight d-flex f-center">
+                  Full height Element
+                </div>
+                <div class="is-half-vh d-flex f-center">
+                  Half viewport height Element
+                </div>
+                <div class="is-full-vh d-flex f-center">
+                  Full viewport height Element
+                </div>
+                <div class="is-full-size d-flex f-center">
+                  Full height and width Element
+                </div>
+                <div class="is-half-size-vh d-flex f-center">
+                  Half viewport height and full width Element
+                </div>
+                <div class="is-full-size-vh d-flex f-center">
+                  Full viewport height and full width Element
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-markup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  </body>
 </html>

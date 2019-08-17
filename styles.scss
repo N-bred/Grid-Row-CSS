@@ -1,10 +1,140 @@
-/* Created By Nicolas Caballero 2019  */
+$primary: #1e8feb;
 
-@import './scss/variables';
-@import './scss/mixins';
-@import './scss/global';
-@import './scss/utils';
-@import './scss/displays';
-@import './scss/sizes';
-@import './scss/flex';
-@import './scss/grid';
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f9f9f9;
+}
+
+.nav {
+  top: 0;
+  background: #fff;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  height: 6.5rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  h1 {
+    color: $primary;
+  }
+
+  .search-bar {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: #1e8feb;
+    font-size: 1.6rem;
+
+    &::placeholder {
+      color: currentColor;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.documentation-bar {
+  border-right: 2px solid rgba($primary, 0.4);
+}
+
+.documentation-bar-content {
+  h1 {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      a {
+        text-decoration: none;
+        color: $primary;
+
+        &:hover {
+          color: darken($primary, 15%);
+        }
+      }
+    }
+  }
+}
+
+.info-card {
+  h1,
+  h2 {
+    line-height: 1.6;
+    border-bottom: 2px solid rgba($primary, 0.4);
+    font-weight: 400;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  pre {
+    background: none;
+    &::before,
+    &::after {
+      content: none;
+    }
+  }
+
+  span.code-text {
+    background: #d9d9d9;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-family: consolas;
+    font-size: 1.4rem;
+  }
+
+  .example {
+    &.displays,
+    &.sizes {
+      & > div {
+        padding: 2.5rem;
+      }
+      & > div:nth-child(1) {
+        background: #1e8feb;
+        color: #fff;
+      }
+      & > div:nth-child(2) {
+        background: #f6e336;
+        color: #444;
+      }
+      & > div:nth-child(3) {
+        background: #5f34af;
+        color: #fff;
+      }
+      & > div:nth-child(4) {
+        background: #9423a8;
+        color: #fff;
+      }
+      & > div:nth-child(5) {
+        background: #00b4cc;
+        color: #fff;
+      }
+      & > div:nth-child(6) {
+        background: #eb3d30;
+        color: #fff;
+      }
+      & > div:nth-child(7) {
+        background: #eb3d30;
+        color: #fff;
+      }
+    }
+
+    &.sizes {
+      & > div:nth-child(6) {
+        background: #83bb43;
+        color: #fff;
+      }
+    }
+  }
+}

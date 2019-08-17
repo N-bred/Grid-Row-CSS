@@ -1,0 +1,98 @@
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f9f9f9; }
+
+.nav {
+  top: 0;
+  background: #fff;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  height: 6.5rem; }
+  .nav a {
+    text-decoration: none; }
+  .nav h1 {
+    color: #1e8feb; }
+  .nav .search-bar {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: #1e8feb;
+    font-size: 1.6rem; }
+    .nav .search-bar::placeholder {
+      color: currentColor;
+      font-size: 1.6rem; }
+
+.documentation-bar {
+  border-right: 2px solid rgba(30, 143, 235, 0.4); }
+
+.documentation-bar-content h1 {
+  font-size: 1.6rem;
+  font-weight: 300; }
+
+.documentation-bar-content ul {
+  list-style: none; }
+  .documentation-bar-content ul li a {
+    text-decoration: none;
+    color: #1e8feb; }
+    .documentation-bar-content ul li a:hover {
+      color: #0f66ad; }
+
+.info-card h1,
+.info-card h2 {
+  line-height: 1.6;
+  border-bottom: 2px solid rgba(30, 143, 235, 0.4);
+  font-weight: 400; }
+
+.info-card p {
+  line-height: 1.6; }
+
+.info-card ul {
+  list-style: none; }
+
+.info-card pre {
+  background: none; }
+  .info-card pre::before, .info-card pre::after {
+    content: none; }
+
+.info-card span.code-text {
+  background: #d9d9d9;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-family: consolas;
+  font-size: 1.4rem; }
+
+.info-card .example.displays > div, .info-card .example.sizes > div {
+  padding: 2.5rem; }
+
+.info-card .example.displays > div:nth-child(1), .info-card .example.sizes > div:nth-child(1) {
+  background: #1e8feb;
+  color: #fff; }
+
+.info-card .example.displays > div:nth-child(2), .info-card .example.sizes > div:nth-child(2) {
+  background: #f6e336;
+  color: #444; }
+
+.info-card .example.displays > div:nth-child(3), .info-card .example.sizes > div:nth-child(3) {
+  background: #5f34af;
+  color: #fff; }
+
+.info-card .example.displays > div:nth-child(4), .info-card .example.sizes > div:nth-child(4) {
+  background: #9423a8;
+  color: #fff; }
+
+.info-card .example.displays > div:nth-child(5), .info-card .example.sizes > div:nth-child(5) {
+  background: #00b4cc;
+  color: #fff; }
+
+.info-card .example.displays > div:nth-child(6), .info-card .example.sizes > div:nth-child(6) {
+  background: #eb3d30;
+  color: #fff; }
+
+.info-card .example.displays > div:nth-child(7), .info-card .example.sizes > div:nth-child(7) {
+  background: #eb3d30;
+  color: #fff; }
+
+.info-card .example.sizes > div:nth-child(6) {
+  background: #83bb43;
+  color: #fff; }

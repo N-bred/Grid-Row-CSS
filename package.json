@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node-sass -w styles.scss css/gridrow.css",
-    "compile": "node-sass styles.scss css/gridrow.css",
+    "start": "node-sass -w styles.scss css/styles.css",
+    "compile": "node-sass gridrow.scss css/gridrow.css",
     "optimize": "postcss css/gridrow.css > css/gridrow.min.css",
     "build": "npm-run-all compile optimize"
   },

@@ -1,7 +1,7 @@
 // Paddings
 
 @for $i from 1 through 10 {
-  $value: #{$i} * 0.5rem;
+  $value: calc(#{$i} * 0.5rem);
 
   .p-#{$i} {
     padding: $value;
@@ -23,7 +23,7 @@
 // Margins
 
 @for $i from 1 through 10 {
-  $value: #{$i} * 0.5rem;
+  $value: calc(#{$i} * 0.5rem);
 
   .m-#{$i} {
     margin: $value;
@@ -54,4 +54,38 @@
 
 .vertical-a-top {
   vertical-align: top;
+}
+
+//
+
+.pos-absolute {
+  position: absolute;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-fixed {
+  position: fixed;
+}
+
+.pos-sticky {
+  position: sticky;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.text-lower {
+  text-transform: lowercase;
+}
+
+.text-capital {
+  text-transform: capitalize;
 }
