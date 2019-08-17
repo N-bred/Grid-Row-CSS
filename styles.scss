@@ -122,6 +122,10 @@ body {
 
   ul {
     list-style: none;
+
+    li {
+      line-height: 1.7;
+    }
   }
 
   pre {
@@ -142,7 +146,8 @@ body {
 
   .example {
     &.displays,
-    &.sizes {
+    &.sizes,
+    &.flexbox > div {
       & > div {
         padding: 2.5rem;
       }
@@ -173,6 +178,42 @@ body {
       & > div:nth-child(7) {
         background: #eb3d30;
         color: #fff;
+      }
+    }
+
+    &.flexbox {
+      & > div {
+        width: 100%;
+        background: #fff;
+        border: 1px solid $primary;
+
+        & > div {
+          width: 30%;
+        }
+      }
+
+      @include max-sm {
+        .nowrap {
+          overflow-x: scroll;
+        }
+      }
+
+      .f-row,
+      .f-column {
+        & > div {
+          width: 100%;
+        }
+      }
+
+      div[class*='f-justify'] {
+        & > div {
+          width: auto;
+        }
+      }
+
+      div[class*='f-align'],
+      div.f-center {
+        height: 20rem;
       }
     }
   }

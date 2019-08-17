@@ -221,7 +221,7 @@ brwoser to see it)
                   100vh
                 </li>
                 <li class="mt-5">
-                  <span class="code-text">.is-full-size:</span> Sets the height
+                  <span class="code-text">.is-full-size:</span> Sets the height to auto
                   and width to 100%
                 </li>
                 <li class="mt-5">
@@ -272,6 +272,243 @@ brwoser to see it)
                 <div class="is-full-size-vh d-flex f-center">
                   Full viewport height and full width Element
                 </div>
+              </div>
+            </section>
+
+
+            <section
+              class="info-card displays grid-column xs-12 mb-10"
+              id="flexbox"
+            >
+              <h1 class="mb-5">Flexbox</h1>
+
+              <p class="mb-5">
+                Flexbox is a pretty neat and useful technology to align elements in one direction, when combined with a grid system it becomes extremely powerful and it is often enough to make any type of layout with little CSS.
+
+                Grid Row CSS comes with a bunch of flex based classes to make your life easier.
+
+                Note: These classes need to be applied to a parent element with its display propertie set as Flex. (You can do this easily by adding a ".d-flex" class to the element).
+              </p>
+
+              <ul class="mb-5">
+                <li class="mt-5">
+                  <span class="code-text">.f-wrap:</span> Sets the flex-wrap propertie of the element to "wrap"
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.f-nowrap:</span> Sets the flex-wrap propertie of the element to "nowrap"
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.f-row:</span> Sets the direction of the flex element to be a row
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.f-column:</span> Sets the direction of the flex element to be a column
+                </li>
+              </ul>
+              
+              <h2 class="mb-5">Horizontal Alignment</h2>
+
+              <p class="mb-5">
+                The following classes can help you to align your elements on the X axis while the flex direction is set to row. Or the Y axis if the flex direction is set to column
+              </p>
+
+              <ul class="mb-5">
+                <li class="mt-5">
+                  <span class="code-text">.f-justify-start:</span> Aligns the elements to the start
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.f-justify-center:</span> Aligns the elements to the center
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.f-justify-end:</span> Aligns the elements to the end
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.f-justify-stretch:</span> Aligns the elements to be stretched
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.f-justify-between:</span> Aligns the elements to be spaced by the amount of free space available between them
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.f-justify-evenly:</span> Aligns the elements to be spaced evenly
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.f-justify-around:</span> Aligns the elements to be spaced based on the space around them
+                </li>
+              </ul>
+
+              <h2 class="mb-5">Vertical Alignment</h2>
+
+              <p class="mb-5">
+                The following classes can help you to align your elements on the Y axis while the flex direction is set to row. Or the X axis if the flex direction is set to column
+              </p>
+
+              <ul class="mb-5">
+                <li class="mt-5">
+                  <span class="code-text">.f-align-start:</span> Aligns the elements to the start
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.f-align-center:</span> Aligns the elements to the center
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.f-align-end:</span> Aligns the elements to the end
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.f-align-stretch:</span> Aligns the elements to be stretched (The elements will expand over all the available space)
+                </li>
+              </ul>
+
+              <h2 class="mb-5">Vertical and Horizontal centering</h2>
+
+              <p class="mb-5">
+                One of the most common needs in web developement its to center elements. The next class can help you to do so.
+              </p>
+
+              <ul class="mb-5">
+                <li class="mt-5">
+                  <span class="code-text">.f-center:</span> Aligns the elements to the center, both horizontally and vertically
+                </li>
+              </ul>
+
+
+              <h2 class="mb-5">Self alignment</h2>
+
+              <p class="mb-5">
+                While using flexbox you can set an element to justfiy or align itself based on the align-self and justify-self properties. The following classes will do the job. 
+
+                Note: These classes need to be applied to a child element.
+              </p>
+
+              <ul class="mb-5">
+                <li class="mt-5">
+                  <span class="code-text">.f-justify-self-start:</span> Aligns itself to the start
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.f-justify-self-center:</span> Aligns itself to the center
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.f-justify-self-end:</span> Aligns itself to the end
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.f-justify-self-stretch:</span> Aligns itself to be stretched
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.f-align-self-start:</span> Aligns itself to the start
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.f-align-self-center:</span> Aligns itself to the center
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.f-align-self-end:</span> Aligns itself to the end
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.f-align-self-stretch:</span> Aligns itself to be stretched
+                </li>
+              </ul>
+
+              <pre class="mb-5 d-block">
+              <code class="language-markup">
+&lt;div class="is-fullwidth">Full width Element&lt;/div>
+&lt;div class="is-fullheight">Full height Element&lt;/div>
+&lt;div class="is-half-vh">Half viewport height Element&lt;/div>
+&lt;div class="is-full-vh">Full viewport height Element&lt;/div>
+&lt;div class="is-full-size">Full height and width Element&lt;/div>
+&lt;div class="is-half-size-vh">
+  Half viewport height and full width Element
+&lt;/div>
+&lt;div class="is-full-size-vh">
+  Full viewport height and full width Element
+&lt;/div>
+              </code>
+            </pre>
+
+              <div class="example flexbox d-flex f-column">
+                <div class="f-wrap d-flex wrap mb-5">
+                  <div>Item wrap 1</div>
+                  <div>Item wrap 2</div>
+                  <div>Item wrap 3</div>
+                  <div>Item wrap 4</div>
+                  <div>Item wrap 5</div>
+                  <div>Item wrap 6</div>
+                </div>
+                <div class="f-nowrap d-flex nowrap mb-5">
+                  <div>Item nowrap 1</div>
+                  <div>Item nowrap 2</div>
+                  <div>Item nowrap 3</div>
+                  <div>Item nowrap 4</div>
+                  <div>Item nowrap 5</div>
+                  <div>Item nowrap 6</div>
+                </div>
+                
+                <div class="d-flex f-row mb-5">
+                    <div>Item row 1</div>
+                    <div>Item row 2</div>
+                    <div>Item row 3</div>
+                </div>
+
+                <div class="d-flex f-column mb-5">
+                    <div>Item column 1</div>
+                    <div>Item column 2</div>
+                    <div>Item column 3</div>
+                </div>
+
+                <div class="d-flex f-justify-start mb-5">
+                    <div>Item justify start 1</div>
+                    <div>Item justify start 2</div>
+                    <div>Item justify start 3</div>
+                </div>
+                <div class="d-flex f-justify-center mb-5">
+                    <div>Item justify center 1</div>
+                    <div>Item justify center 2</div>
+                    <div>Item justify center 3</div>
+                </div>
+                <div class="d-flex f-justify-end mb-5">
+                    <div>Item justify end 1</div>
+                    <div>Item justify end 2</div>
+                    <div>Item justify end 3</div>
+                </div>
+                <div class="d-flex f-justify-stretch mb-5">
+                    <div>Item justify stretch 1</div>
+                    <div>Item justify stretch 2</div>
+                    <div>Item justify stretch 3</div>
+                </div>
+                <div class="d-flex f-justify-between mb-5">
+                    <div>Item justify between 1</div>
+                    <div>Item justify between 2</div>
+                    <div>Item justify between 3</div>
+                </div>
+                <div class="d-flex f-justify-evenly mb-5">
+                    <div>Item justify evenly 1</div>
+                    <div>Item justify evenly 2</div>
+                    <div>Item justify evenly 3</div>
+                </div>
+                <div class="d-flex f-justify-around mb-5">
+                    <div>Item justify around 1</div>
+                    <div>Item justify around 2</div>
+                    <div>Item justify around 3</div>
+                </div>
+
+                <div class="d-flex f-align-start mb-5">
+                    <div>Item align-start 1</div> 
+                </div>
+                <div class="d-flex f-align-center  mb-5">
+                    <div>Item align-center 1</div>  
+                </div>
+                <div class="d-flex f-align-end  mb-5">
+                    <div>Item align-end 1</div>
+                </div>
+                <div class="d-flex f-align-stretch  mb-5">
+                    <div>Item align-stretch 1</div>
+                </div>
+                <div class="d-flex f-center mb-5">
+                    <div>Item vertically and horizontally centered</div>
+                </div>
+
+
+
+
+                
+
+
+                <!-- // End -->
               </div>
             </section>
           </div>

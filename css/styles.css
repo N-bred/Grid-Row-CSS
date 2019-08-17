@@ -75,6 +75,8 @@ body {
 
 .info-card ul {
   list-style: none; }
+  .info-card ul li {
+    line-height: 1.7; }
 
 .info-card pre {
   background: none; }
@@ -88,36 +90,66 @@ body {
   font-family: consolas;
   font-size: 1.4rem; }
 
-.info-card .example.displays > div, .info-card .example.sizes > div {
+.info-card .example.displays > div, .info-card .example.sizes > div,
+.info-card .example.flexbox > div > div {
   padding: 2.5rem; }
 
-.info-card .example.displays > div:nth-child(1), .info-card .example.sizes > div:nth-child(1) {
+.info-card .example.displays > div:nth-child(1), .info-card .example.sizes > div:nth-child(1),
+.info-card .example.flexbox > div > div:nth-child(1) {
   background: #1e8feb;
   color: #fff; }
 
-.info-card .example.displays > div:nth-child(2), .info-card .example.sizes > div:nth-child(2) {
+.info-card .example.displays > div:nth-child(2), .info-card .example.sizes > div:nth-child(2),
+.info-card .example.flexbox > div > div:nth-child(2) {
   background: #f6e336;
   color: #444; }
 
-.info-card .example.displays > div:nth-child(3), .info-card .example.sizes > div:nth-child(3) {
+.info-card .example.displays > div:nth-child(3), .info-card .example.sizes > div:nth-child(3),
+.info-card .example.flexbox > div > div:nth-child(3) {
   background: #5f34af;
   color: #fff; }
 
-.info-card .example.displays > div:nth-child(4), .info-card .example.sizes > div:nth-child(4) {
+.info-card .example.displays > div:nth-child(4), .info-card .example.sizes > div:nth-child(4),
+.info-card .example.flexbox > div > div:nth-child(4) {
   background: #9423a8;
   color: #fff; }
 
-.info-card .example.displays > div:nth-child(5), .info-card .example.sizes > div:nth-child(5) {
+.info-card .example.displays > div:nth-child(5), .info-card .example.sizes > div:nth-child(5),
+.info-card .example.flexbox > div > div:nth-child(5) {
   background: #00b4cc;
   color: #fff; }
 
-.info-card .example.displays > div:nth-child(6), .info-card .example.sizes > div:nth-child(6) {
+.info-card .example.displays > div:nth-child(6), .info-card .example.sizes > div:nth-child(6),
+.info-card .example.flexbox > div > div:nth-child(6) {
   background: #83bb43;
   color: #fff; }
 
-.info-card .example.displays > div:nth-child(7), .info-card .example.sizes > div:nth-child(7) {
+.info-card .example.displays > div:nth-child(7), .info-card .example.sizes > div:nth-child(7),
+.info-card .example.flexbox > div > div:nth-child(7) {
   background: #eb3d30;
   color: #fff; }
+
+.info-card .example.flexbox > div {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #1e8feb; }
+  .info-card .example.flexbox > div > div {
+    width: 30%; }
+
+@media only screen and (max-width: 768px) {
+  .info-card .example.flexbox .nowrap {
+    overflow-x: scroll; } }
+
+.info-card .example.flexbox .f-row > div,
+.info-card .example.flexbox .f-column > div {
+  width: 100%; }
+
+.info-card .example.flexbox div[class*='f-justify'] > div {
+  width: auto; }
+
+.info-card .example.flexbox div[class*='f-align'],
+.info-card .example.flexbox div.f-center {
+  height: 20rem; }
 
 footer.footer {
   border-top: 2px solid #1e8feb; }
