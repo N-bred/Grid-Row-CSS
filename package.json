@@ -1,12 +1,12 @@
 {
-  "name": "mini-css-library",
+  "name": "grid-row",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node-sass -w styles.scss css/gridder.css",
-    "compile": "node-sass styles.scss css/gridder.css",
-    "optimize": "postcss css/gridder.css > css/gridder.min.css",
+    "start": "node-sass -w styles.scss css/gridrow.css",
+    "compile": "node-sass styles.scss css/gridrow.css",
+    "optimize": "postcss css/gridrow.css > css/gridrow.min.css",
     "build": "npm-run-all compile optimize"
   },
   "author": "",
