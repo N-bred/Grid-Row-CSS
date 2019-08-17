@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node-sass -w styles.scss css/styles.css",
-    "compile": "node-sass styles.scss css/styles.css",
-    "optimize": "postcss css/styles.css > css/styles.min.css",
+    "start": "node-sass -w styles.scss css/gridder.css",
+    "compile": "node-sass styles.scss css/gridder.css",
+    "optimize": "postcss css/gridder.css > css/gridder.min.css",
     "build": "npm-run-all compile optimize"
   },
   "author": "",

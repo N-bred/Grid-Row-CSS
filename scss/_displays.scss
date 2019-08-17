@@ -1,0 +1,178 @@
+// Displays
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+@include for-xs {
+  .d-xs-block {
+    display: block;
+  }
+
+  .d-xs-inline-block {
+    display: inline-block;
+  }
+
+  .d-xs-none {
+    display: none;
+  }
+
+  .d-xs-flex {
+    display: flex;
+  }
+
+  .d-xs-inline-flex {
+    display: inline-flex;
+  }
+
+  .d-xs-grid {
+    display: grid;
+  }
+}
+
+@include for-sm {
+  .d-sm-block {
+    display: block;
+  }
+
+  .d-sm-inline-block {
+    display: inline-block;
+  }
+
+  .d-sm-none {
+    display: none;
+  }
+
+  .d-sm-flex {
+    display: flex;
+  }
+
+  .d-sm-inline-flex {
+    display: inline-flex;
+  }
+
+  .d-sm-grid {
+    display: grid;
+  }
+}
+@include for-md {
+  .d-md-block {
+    display: block;
+  }
+
+  .d-md-inline-block {
+    display: inline-block;
+  }
+
+  .d-md-none {
+    display: none;
+  }
+
+  .d-md-flex {
+    display: flex;
+  }
+
+  .d-md-inline-flex {
+    display: inline-flex;
+  }
+
+  .d-md-grid {
+    display: grid;
+  }
+}
+@include for-lg {
+  .d-lg-block {
+    display: block;
+  }
+
+  .d-lg-inline-block {
+    display: inline-block;
+  }
+
+  .d-lg-none {
+    display: none;
+  }
+
+  .d-lg-flex {
+    display: flex;
+  }
+
+  .d-lg-inline-flex {
+    display: inline-flex;
+  }
+
+  .d-lg-grid {
+    display: grid;
+  }
+}
+@include for-xl {
+  .d-xxl-block {
+    display: block;
+  }
+
+  .d-xxl-inline-block {
+    display: inline-block;
+  }
+
+  .d-xxl-none {
+    display: none;
+  }
+
+  .d-xxl-flex {
+    display: flex;
+  }
+
+  .d-xxl-inline-flex {
+    display: inline-flex;
+  }
+
+  .d-xxl-grid {
+    display: grid;
+  }
+}
+
+@include for-xxl {
+  .d-xxl-block {
+    display: block;
+  }
+
+  .d-xxl-inline-block {
+    display: inline-block;
+  }
+
+  .d-xxl-none {
+    display: none;
+  }
+
+  .d-xxl-flex {
+    display: flex;
+  }
+
+  .d-xxl-inline-flex {
+    display: inline-flex;
+  }
+
+  .d-xxl-grid {
+    display: grid;
+  }
+}

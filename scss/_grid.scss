@@ -35,47 +35,56 @@
 }
 
 .grid-column {
-  @for $i from 1 through 12 {
-    &.xs-#{$i} {
-      @include for-xs {
+  @include for-xs {
+    @for $i from 1 through 12 {
+      &.xs-#{$i} {
         grid-column: span $i;
       }
     }
   }
 
-  @for $i from 1 through 12 {
-    &.sm-#{$i} {
-      @include for-sm {
+  @include for-sm {
+    @for $i from 1 through 12 {
+      &.sm-#{$i} {
         grid-column: span $i;
       }
     }
   }
-  @for $i from 1 through 12 {
-    &.md-#{$i} {
-      @include for-md {
+  @include for-md {
+    @for $i from 1 through 12 {
+      &.md-#{$i} {
         grid-column: span $i;
       }
     }
   }
-  @for $i from 1 through 12 {
-    &.lg-#{$i} {
-      @include for-lg {
+  @include for-lg {
+    @for $i from 1 through 12 {
+      &.lg-#{$i} {
         grid-column: span $i;
       }
     }
   }
-  @for $i from 1 through 12 {
-    &.xl-#{$i} {
-      @include for-xl {
+  @include for-xl {
+    @for $i from 1 through 12 {
+      &.xl-#{$i} {
         grid-column: span $i;
       }
     }
   }
-  @for $i from 1 through 12 {
-    &.xxl-#{$i} {
-      @include for-xxl {
+
+  @include for-xxl {
+    @for $i from 1 through 12 {
+      &.xxl-#{$i} {
         grid-column: span $i;
       }
     }
+  }
+}
+
+// Positional order
+
+@for $i from 0 through 13 {
+  .order-#{$i} {
+    order: $i;
   }
 }
