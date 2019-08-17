@@ -20,16 +20,21 @@
   </head>
   <body>
     <nav class="is-fullwidth pos-fixed nav d-flex f-align-center p-5">
+      <div class="hamburguer d-xs-block d-md-none mr-auto">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
       <a href="#"><h1>Grid Row CSS</h1></a>
 
-      <form class="ml-auto">
+      <form class="ml-auto d-xs-none d-md-block">
         <input type="text" placeholder="Search..." class="search-bar p-2" />
       </form>
     </nav>
 
-    <div class="container-fluid is-full-size mt-10">
+    <div class="container-fluid mt-10">
       <div class="grid-row is-full-size">
-        <div class="grid-column xs-3 mt-5 documentation-bar p-5">
+        <div class="grid-column xs-3 pt-10 documentation-bar p-5">
           <div class="documentation-bar-content pos-fixed ">
             <h1>Documentation</h1>
 
@@ -44,7 +49,7 @@
           </div>
         </div>
 
-        <div class="grid-column xs-9 documentation-text p-5 mt-5">
+        <div class="grid-column xs-12 md-9 documentation-text p-5 pt-10">
           <div class="grid-row">
             <section
               class="info-card displays grid-column xs-12 mb-10"
@@ -274,9 +279,17 @@ brwoser to see it)
       </div>
     </div>
 
+    <footer class="is-fullwidth footer d-flex f-center p-3">
+      <h1>
+        Created by <span class="footer-author">Nicolas Caballero</span> -
+        <span id="year"></span>
+      </h1>
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-core.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-markup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-css.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

@@ -1,3 +1,9 @@
+@mixin max-sm {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
 $primary: #1e8feb;
 
 html {
@@ -15,6 +21,16 @@ body {
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
   z-index: 1;
   height: 6.5rem;
+
+  .hamburguer {
+    cursor: pointer;
+    & > div {
+      width: 3rem;
+      height: 5px;
+      background-color: rgba($primary, 0.4);
+      margin: 0.5rem 1rem 0 0;
+    }
+  }
 
   a {
     text-decoration: none;
@@ -38,6 +54,36 @@ body {
 
 .documentation-bar {
   border-right: 2px solid rgba($primary, 0.4);
+  background: #f9f9f9;
+
+  @include max-sm {
+    position: fixed;
+    height: 100%;
+    width: 50%;
+    top: 6.5rem;
+    margin-top: 0;
+    z-index: 20;
+    left: 0;
+    opacity: 1;
+    transition: transform 0.3s ease-in-out;
+
+    &-content {
+      position: relative;
+
+      ul {
+        li {
+          a {
+            display: inline-block;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  &.toggle-bar {
+    transform: translateX(-100%);
+  }
 }
 
 .documentation-bar-content {
@@ -121,7 +167,7 @@ body {
         color: #fff;
       }
       & > div:nth-child(6) {
-        background: #eb3d30;
+        background: #83bb43;
         color: #fff;
       }
       & > div:nth-child(7) {
@@ -129,12 +175,18 @@ body {
         color: #fff;
       }
     }
+  }
+}
 
-    &.sizes {
-      & > div:nth-child(6) {
-        background: #83bb43;
-        color: #fff;
-      }
+footer.footer {
+  border-top: 2px solid $primary;
+  h1 {
+    font-weight: 300;
+    font-size: 2.4rem;
+
+    .footer-author {
+      font-weight: 400;
+      font-style: italic;
     }
   }
 }

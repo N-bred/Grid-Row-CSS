@@ -11,6 +11,13 @@ body {
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
   z-index: 1;
   height: 6.5rem; }
+  .nav .hamburguer {
+    cursor: pointer; }
+    .nav .hamburguer > div {
+      width: 3rem;
+      height: 5px;
+      background-color: rgba(30, 143, 235, 0.4);
+      margin: 0.5rem 1rem 0 0; }
   .nav a {
     text-decoration: none; }
   .nav h1 {
@@ -24,7 +31,26 @@ body {
       font-size: 1.6rem; }
 
 .documentation-bar {
-  border-right: 2px solid rgba(30, 143, 235, 0.4); }
+  border-right: 2px solid rgba(30, 143, 235, 0.4);
+  background: #f9f9f9; }
+  @media only screen and (max-width: 768px) {
+    .documentation-bar {
+      position: fixed;
+      height: 100%;
+      width: 50%;
+      top: 6.5rem;
+      margin-top: 0;
+      z-index: 20;
+      left: 0;
+      opacity: 1;
+      transition: transform 0.3s ease-in-out; }
+      .documentation-bar-content {
+        position: relative; }
+        .documentation-bar-content ul li a {
+          display: inline-block;
+          width: 100%; } }
+  .documentation-bar.toggle-bar {
+    transform: translateX(-100%); }
 
 .documentation-bar-content h1 {
   font-size: 1.6rem;
@@ -86,13 +112,18 @@ body {
   color: #fff; }
 
 .info-card .example.displays > div:nth-child(6), .info-card .example.sizes > div:nth-child(6) {
-  background: #eb3d30;
+  background: #83bb43;
   color: #fff; }
 
 .info-card .example.displays > div:nth-child(7), .info-card .example.sizes > div:nth-child(7) {
   background: #eb3d30;
   color: #fff; }
 
-.info-card .example.sizes > div:nth-child(6) {
-  background: #83bb43;
-  color: #fff; }
+footer.footer {
+  border-top: 2px solid #1e8feb; }
+  footer.footer h1 {
+    font-weight: 300;
+    font-size: 2.4rem; }
+    footer.footer h1 .footer-author {
+      font-weight: 400;
+      font-style: italic; }
