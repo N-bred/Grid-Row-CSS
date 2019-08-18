@@ -151,6 +151,11 @@ body {
 .info-card .example.flexbox div.f-center {
   height: 20rem; }
 
+.info-card .example.grid > div > div {
+  color: #1e8feb;
+  border: 2px solid rgba(30, 143, 235, 0.4);
+  border-radius: 5px; }
+
 footer.footer {
   border-top: 2px solid #1e8feb; }
   footer.footer h1 {

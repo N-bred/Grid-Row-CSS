@@ -163,6 +163,8 @@
                 </li>
               </ul>
 
+              <h2 class="mb-5">Examples</h2>
+
               <pre class="mb-5 d-block">
               <code class="language-markup">
 &lt;div class="d-block">Block Element&lt;/div>
@@ -233,6 +235,8 @@ brwoser to see it)
                   height to 50vh and the width to 100%
                 </li>
               </ul>
+
+              <h2 class="mb-5">Examples</h2>
 
               <pre class="mb-5 d-block">
               <code class="language-markup">
@@ -404,6 +408,8 @@ brwoser to see it)
                 </li>
               </ul>
 
+              <h2 class="mb-5">Examples</h2>
+
               <pre class="mb-5 d-block">
               <code class="language-markup">
 &lt;div class="f-wrap d-flex wrap">
@@ -572,6 +578,221 @@ brwoser to see it)
                 </div>
               </div>
             </section>
+
+            <!-- Grid -->
+
+            <section
+            class="info-card displays grid-column xs-12 mb-10"
+            id="grid"
+          >
+            <h1 class="mb-5">Grid</h1>
+
+            <p class="mb-5">
+              Grid Row CSS provides a grid based on the CSS grid system, it is a 12 columns grid that supports nesting rows and it also has many classes to work with the responsiveness and the breakpoints. 
+
+              A grid consist of an element with the ".grid-row" class, and its children with the ".grid-column" class. 
+
+              <br>
+              <br>
+
+              These are the following classes to work with the grid.
+            </p>
+
+            <ul class="mb-5">
+              <li class="mt-5">
+                <span class="code-text">.grid-row:</span> Sets an element to act as a 12 columns grid container
+              </li>
+              <li class="mt-5">
+                <span class="code-text">.grid-column:</span> Sets an element to be a child of the grid container
+              </li>
+              
+              <li class="mt-5">
+                <span class="code-text">.g-justify-start:</span> Aligns the child elements to the start on the X axis
+              </li>
+              <li class="mt-5">
+                <span class="code-text">.g-justify-center:</span> Aligns the child elements to the center on the X axis
+              </li>
+              <li class="mt-5">
+                <span class="code-text">.g-justify-end:</span> Aligns the child elements to the end on the X axis
+              </li>
+              <li class="mt-5">
+                  <span class="code-text">.g-center:</span> Sets the elements inside the grid to be centered in bot X and Y axis
+                </li>
+            </ul>
+
+            <h2 class="mb-5">Grid Gap</h2>
+
+              <p class="mb-5">
+                By default, Grid Row CSS doesn't set any gap to the grid, so you won't have to overwrite those styles for you design.
+
+                Instead, it provides classes to set the gap between columns and rows.
+
+                Multiple classes were made to fit into any kind of design, for the gap the numbers go from 1 to 10.
+
+                <br>
+                <br>
+
+                e.g: ".g-gap-7" -> grid-gap: 7 * 0.5rem;
+              </p>
+
+              <ul class="mb-5">
+                <li class="mt-5">
+                  <span class="code-text">.g-col-gap-{$number}:</span> Sets the gap bewteen columns
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.g-row-gap-{$number}:</span> Sets the gap bewteen rows
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.g-gap-{$number}:</span> Sets the gap between both rows and columns
+                </li>
+                
+              </ul>
+
+
+              <h2 class="mb-5">Grid breakpoints and sizes</h2>
+
+              <p class="mb-5">
+                Grid Row CSS provides a lot of classes to set the size of the columns in the row, it also provides a responsive functionality to set these values for certain <a href="#breakpoints">breakpoints</a>
+
+                They follow the boostrap grid style, in which you write the breakpoint followed by the number of columns,
+
+                <br>
+                <br>
+
+                eg: md-6, xs-12, xl-4, xxl-3, sm-6.
+
+                <br>
+                <br>
+                Note: in order for this to work, the element must have a ".grid-column" class.
+              </p>
+
+              <ul class="mb-5">
+                <li class="mt-5">
+                  <span class="code-text">.xs-{$number}:</span> Sets the number of columns based on the xs breakpoint
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.sm-{$number}:</span> Sets the number of columns based on the sm breakpoint
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.md-{$number}:</span> Sets the number of columns based on the md breakpoint
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.lg-{$number}:</span> Sets the number of columns based on the lg breakpoint
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.xl-{$number}:</span> Sets the number of columns based on the xl breakpoint
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.xxl-{$number}:</span> Sets the number of columns based on the xxl breakpoint
+                </li>
+              </ul>
+
+              <h2 class="mb-5">Examples</h2>
+
+            <pre class="mb-5 d-block">
+            <code class="language-markup">
+&lt;div class="grid-row mb-5 g-gap-2">
+    &lt;div class="grid-column xs-12 md-6 lg-1 d-flex f-center">Grid column 1&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-1 d-flex f-center">Grid column 2&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-1 d-flex f-center">Grid column 3&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-1 d-flex f-center">Grid column &lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-1 d-flex f-center">Grid column 5&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-1 d-flex f-center">Grid column 6&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-1 d-flex f-center">Grid column 7&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-1 d-flex f-center">Grid column 8&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-1 d-flex f-center">Grid column 9&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-1 d-flex f-center">Grid column 10&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-1 d-flex f-center">Grid column 11&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-1 d-flex f-center">Grid column 12&lt;/div>
+  &lt;/div>
+
+  &lt;div class="grid-row g-gap-4 mb-5">
+    &lt;div class="grid-column xs-12 md-6 lg-12 d-flex f-center">12 Columns&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-11 d-flex f-center">11 Columns&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-1 d-flex f-center">1  Column&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-10 d-flex f-center">10 Columns&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-2 d-flex f-center">2 Columns&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-9 d-flex f-center">9 Columns&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-3 d-flex f-center">3 Columns&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-8 d-flex f-center">8 Columns&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-4 d-flex f-center">4 Columns&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-7 d-flex f-center">7 Columns&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-5 d-flex f-center">5 Columns&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-6 d-flex f-center">6 Columns&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-6 d-flex f-center">6 Columns&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-5 d-flex f-center">5 Columns&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-7 d-flex f-center">7 Columns&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-4 d-flex f-center">4 Columns&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-8 d-flex f-center">8 Columns&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-3 d-flex f-center">3 Columns&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-9 d-flex f-center">9 Columns&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-2 d-flex f-center">2 Columns&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-10 d-flex f-center">10 Columns&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-1 d-flex f-center">1 Column&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-11 d-flex f-center">11 Columns&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-12 d-flex f-center">12 Columns&lt;/div>
+  &lt;/div>
+
+  &lt;div class="grid-row g-gap-5 mb-5">
+    &lt;div class="grid-column xs-12 md-6 lg-4 d-flex f-center">Column gapped 1&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-4 d-flex f-center">Column gapped 2&lt;/div>
+    &lt;div class="grid-column xs-12 md-6 lg-4 d-flex f-center">Column gapped 3&lt;/div>
+  &lt;/div>
+            </code>
+          </pre>
+
+            <div class="example grid">
+             <div class="grid-row mb-5 g-gap-2">
+               <div class="grid-column xs-12 md-6 lg-1 d-flex f-center">Grid column 1</div>
+               <div class="grid-column xs-12 md-6 lg-1 d-flex f-center">Grid column 2</div>
+               <div class="grid-column xs-12 md-6 lg-1 d-flex f-center">Grid column 3</div>
+               <div class="grid-column xs-12 md-6 lg-1 d-flex f-center">Grid column 4</div>
+               <div class="grid-column xs-12 md-6 lg-1 d-flex f-center">Grid column 5</div>
+               <div class="grid-column xs-12 md-6 lg-1 d-flex f-center">Grid column 6</div>
+               <div class="grid-column xs-12 md-6 lg-1 d-flex f-center">Grid column 7</div>
+               <div class="grid-column xs-12 md-6 lg-1 d-flex f-center">Grid column 8</div>
+               <div class="grid-column xs-12 md-6 lg-1 d-flex f-center">Grid column 9</div>
+               <div class="grid-column xs-12 md-6 lg-1 d-flex f-center">Grid column 10</div>
+               <div class="grid-column xs-12 md-6 lg-1 d-flex f-center">Grid column 11</div>
+               <div class="grid-column xs-12 md-6 lg-1 d-flex f-center">Grid column 12</div>
+             </div>
+
+             <div class="grid-row g-gap-4 mb-5">
+               <div class="grid-column xs-12 md-6 lg-12 d-flex f-center">12 Columns</div>
+               <div class="grid-column xs-12 md-6 lg-11 d-flex f-center">11 Columns</div>
+               <div class="grid-column xs-12 md-6 lg-1 d-flex f-center">1  Column</div>
+               <div class="grid-column xs-12 md-6 lg-10 d-flex f-center">10 Columns</div>
+               <div class="grid-column xs-12 md-6 lg-2 d-flex f-center">2 Columns</div>
+               <div class="grid-column xs-12 md-6 lg-9 d-flex f-center">9 Columns</div>
+               <div class="grid-column xs-12 md-6 lg-3 d-flex f-center">3 Columns</div>
+               <div class="grid-column xs-12 md-6 lg-8 d-flex f-center">8 Columns</div>
+               <div class="grid-column xs-12 md-6 lg-4 d-flex f-center">4 Columns</div>
+               <div class="grid-column xs-12 md-6 lg-7 d-flex f-center">7 Columns</div>
+               <div class="grid-column xs-12 md-6 lg-5 d-flex f-center">5 Columns</div>
+               <div class="grid-column xs-12 md-6 lg-6 d-flex f-center">6 Columns</div>
+               <div class="grid-column xs-12 md-6 lg-6 d-flex f-center">6 Columns</div>
+               <div class="grid-column xs-12 md-6 lg-5 d-flex f-center">5 Columns</div>
+               <div class="grid-column xs-12 md-6 lg-7 d-flex f-center">7 Columns</div>
+               <div class="grid-column xs-12 md-6 lg-4 d-flex f-center">4 Columns</div>
+               <div class="grid-column xs-12 md-6 lg-8 d-flex f-center">8 Columns</div>
+               <div class="grid-column xs-12 md-6 lg-3 d-flex f-center">3 Columns</div>
+               <div class="grid-column xs-12 md-6 lg-9 d-flex f-center">9 Columns</div>
+               <div class="grid-column xs-12 md-6 lg-2 d-flex f-center">2 Columns</div>
+               <div class="grid-column xs-12 md-6 lg-10 d-flex f-center">10 Columns</div>
+               <div class="grid-column xs-12 md-6 lg-1 d-flex f-center">1 Column</div>
+               <div class="grid-column xs-12 md-6 lg-11 d-flex f-center">11 Columns</div>
+               <div class="grid-column xs-12 md-6 lg-12 d-flex f-center">12 Columns</div>
+             </div>
+
+             <div class="grid-row g-gap-5 mb-5">
+               <div class="grid-column xs-12 md-6 lg-4 d-flex f-center">Column gapped 1</div>
+               <div class="grid-column xs-12 md-6 lg-4 d-flex f-center">Column gapped 2</div>
+               <div class="grid-column xs-12 md-6 lg-4 d-flex f-center">Column gapped 3</div>
+             </div>
+             
+            </div>
+          </section>
+
           </div>
         </div>
       </div>

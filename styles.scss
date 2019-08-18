@@ -216,6 +216,16 @@ body {
         height: 20rem;
       }
     }
+
+    &.grid {
+      & > div {
+        & > div {
+          color: $primary;
+          border: 2px solid rgba($primary, 0.4);
+          border-radius: 5px;
+        }
+      }
+    }
   }
 }
 
