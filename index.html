@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Grid Row CSS</title>
     <meta name="Author" content="Nicolas Caballero" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap"
       rel="stylesheet"
@@ -20,12 +21,12 @@
   </head>
   <body>
     <nav class="is-fullwidth pos-fixed nav d-flex f-align-center p-5">
-      <div class="hamburguer d-xs-block d-md-none mr-auto">
+      <div class="hamburguer d-xs-block d-md-none mr-auto" id="hamburguer-btn">
         <div></div>
         <div></div>
         <div></div>
       </div>
-      <a href="#"><h1>Grid Row CSS</h1></a>
+      <a href="#" class="d-flex f-center"><h1 class="ml-3 order-2">Grid Row CSS</h1> <img src="./img/favicon.png" alt="Logo" class="order-1"></a>
 
       <form class="ml-auto d-xs-none d-md-block" id="search-form">
         <input type="text" placeholder="Search..." class="search-bar p-2" />
@@ -34,11 +35,11 @@
 
     <div class="container-fluid mt-10">
       <div class="grid-row is-full-size">
-        <div class="grid-column xs-3 pt-10 documentation-bar p-5">
+        <div class="grid-column xs-3 pt-10 documentation-bar p-5" id="documentation-bar">
           <div class="documentation-bar-content pos-fixed ">
             <h1>Documentation</h1>
 
-            <ul class="mt-5">
+            <ul class="mt-5" id="navigation-links">
               <li class="mt-5"><a href="#breakpoints">Breakpoints</a></li>
               <li class="mt-5"><a href="#displays">Displays</a></li>
               <li class="mt-5"><a href="#sizes">Sizes</a></li>
@@ -1008,7 +1009,7 @@ brwoser to see it)
 
     <footer class="is-fullwidth footer d-flex f-center p-3">
       <h1>
-        Created by <span class="footer-author">Nicolas Caballero</span> -
+        Created by <span class="footer-author"><a href="https://n-bred.github.io/" target="_blank" class="text-d-none text-black">Nicolas Caballero</a></span> -
         <span id="year"></span>
       </h1>
     </footer>
