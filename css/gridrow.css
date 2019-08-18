@@ -12,8 +12,7 @@ html {
 
 html,
 body {
-  width: 100%;
-  height: 100%; }
+  width: 100%; }
 
 body {
   font-size: 1.6rem; }
@@ -358,6 +357,18 @@ body {
 .text-white {
   color: #fff; }
 
+.text-black {
+  color: #333; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
 .text-upper {
   text-transform: uppercase; }
 
@@ -366,6 +377,12 @@ body {
 
 .text-capital {
   text-transform: capitalize; }
+
+.text-d-none {
+  text-decoration: none; }
+
+.list-s-none {
+  list-style: none; }
 
 .d-block {
   display: block; }
@@ -515,30 +532,28 @@ body {
 .f-justify-end {
   justify-content: flex-end; }
 
-.f-justify-between,
-.g-justify-between {
+.f-justify-stretch {
+  justify-content: stretch; }
+
+.f-justify-between {
   justify-content: space-between; }
 
-.f-justify-evenly,
-.g-justify-evenly {
+.f-justify-evenly {
   justify-content: space-evenly; }
 
-.f-justify-around,
-.g-justify-around {
+.f-justify-around {
   justify-content: space-around; }
 
 .f-align-start {
   align-items: flex-start; }
 
-.f-align-center,
-.g-align-center {
+.f-align-center {
   align-items: center; }
 
 .f-align-end {
   align-items: flex-end; }
 
-.f-align-stretch,
-.g-align-stretch {
+.f-align-stretch {
   align-items: stretch; }
 
 .f-center {
@@ -548,29 +563,25 @@ body {
 .f-justify-self-start {
   justify-self: flex-start; }
 
-.f-justify-self-center,
-.g-justify-self-center {
+.f-justify-self-center {
   justify-self: center; }
 
 .f-justify-self-end {
   justify-self: flex-end; }
 
-.f-justify-self-stretch,
-.g-justify-self-stretch {
+.f-justify-self-stretch {
   justify-self: stretch; }
 
 .f-align-self-start {
   align-self: flex-start; }
 
-.f-align-self-center,
-.g-align-self-center {
+.f-align-self-center {
   align-self: center; }
 
 .f-align-self-end {
   align-self: flex-end; }
 
-.f-align-self-stretch,
-.g-align-self-stretch {
+.f-align-self-stretch {
   align-self: stretch; }
 
 .grid-row {
@@ -583,6 +594,9 @@ body {
 
 .g-justify-start {
   justify-items: start; }
+
+.g-justify-center {
+  justify-items: center; }
 
 .g-justify-end {
   justify-items: end; }

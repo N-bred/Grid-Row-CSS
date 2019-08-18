@@ -249,6 +249,21 @@ body {
           color: $primary;
           border: 2px solid rgba($primary, 0.4);
           border-radius: 5px;
+
+          @include max-sm {
+            font-size: 1.4rem;
+          }
+        }
+      }
+
+      & > div:nth-child(1) {
+        & > div {
+          text-align: center;
+        }
+      }
+      & > div:nth-child(2) {
+        & > div {
+          white-space: nowrap;
         }
       }
     }

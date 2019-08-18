@@ -172,6 +172,15 @@ body {
   color: #1e8feb;
   border: 2px solid rgba(30, 143, 235, 0.4);
   border-radius: 5px; }
+  @media only screen and (max-width: 768px) {
+    .info-card .example.grid > div > div {
+      font-size: 1.4rem; } }
+
+.info-card .example.grid > div:nth-child(1) > div {
+  text-align: center; }
+
+.info-card .example.grid > div:nth-child(2) > div {
+  white-space: nowrap; }
 
 .info-card .example.utils a {
   background: #1e8feb;
