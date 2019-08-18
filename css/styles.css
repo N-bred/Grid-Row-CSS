@@ -135,6 +135,12 @@ body {
   border: 1px solid #1e8feb; }
   .info-card .example.flexbox > div > div {
     width: 30%; }
+    @media only screen and (max-width: 768px) {
+      .info-card .example.flexbox > div > div {
+        width: 50%; } }
+  @media only screen and (max-width: 768px) {
+    .info-card .example.flexbox > div.f-row > div {
+      width: 0; } }
 
 @media only screen and (max-width: 768px) {
   .info-card .example.flexbox .nowrap {
@@ -144,23 +150,54 @@ body {
 .info-card .example.flexbox .f-column > div {
   width: 100%; }
 
-.info-card .example.flexbox div[class*='f-justify'] > div {
-  width: auto; }
+@media only screen and (max-width: 768px) {
+  .info-card .example.flexbox div[class*='f-justify'] > div {
+    width: 0;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center; } }
 
 .info-card .example.flexbox div[class*='f-align'],
 .info-card .example.flexbox div.f-center {
   height: 20rem; }
+  @media only screen and (max-width: 768px) {
+    .info-card .example.flexbox div[class*='f-align'] > div,
+    .info-card .example.flexbox div.f-center > div {
+      width: 50%;
+      font-size: 1.3rem;
+      display: flex;
+      justify-content: center; } }
 
 .info-card .example.grid > div > div {
   color: #1e8feb;
   border: 2px solid rgba(30, 143, 235, 0.4);
   border-radius: 5px; }
 
+.info-card .example.utils a {
+  background: #1e8feb;
+  border-radius: 5px; }
+
+.info-card .example.utils div[class*='m-'] {
+  border: 1px solid rgba(30, 143, 235, 0.4); }
+
+.info-card .example.utils .relative {
+  height: 15rem;
+  width: 80%;
+  background: #1e8feb; }
+  .info-card .example.utils .relative .absolute {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff; }
+
 footer.footer {
   border-top: 2px solid #1e8feb; }
   footer.footer h1 {
     font-weight: 300;
     font-size: 2.4rem; }
+    @media only screen and (max-width: 768px) {
+      footer.footer h1 {
+        font-size: 1.4rem; } }
     footer.footer h1 .footer-author {
       font-weight: 400;
       font-style: italic; }

@@ -77,6 +77,21 @@
 .text-white {
   color: #fff;
 }
+.text-black {
+  color: #333;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
 
 .text-upper {
   text-transform: uppercase;
@@ -88,4 +103,12 @@
 
 .text-capital {
   text-transform: capitalize;
+}
+
+.text-d-none {
+  text-decoration: none;
+}
+
+.list-s-none {
+  list-style: none;
 }

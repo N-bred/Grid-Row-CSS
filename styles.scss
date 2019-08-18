@@ -189,6 +189,18 @@ body {
 
         & > div {
           width: 30%;
+
+          @include max-sm {
+            width: 50%;
+          }
+        }
+
+        &.f-row {
+          & > div {
+            @include max-sm {
+              width: 0;
+            }
+          }
         }
       }
 
@@ -207,13 +219,27 @@ body {
 
       div[class*='f-justify'] {
         & > div {
-          width: auto;
+          @include max-sm {
+            width: 0;
+            font-size: 1.3rem;
+            display: flex;
+            justify-content: center;
+          }
         }
       }
 
       div[class*='f-align'],
       div.f-center {
         height: 20rem;
+
+        & > div {
+          @include max-sm {
+            width: 50%;
+            font-size: 1.3rem;
+            display: flex;
+            justify-content: center;
+          }
+        }
       }
     }
 
@@ -226,6 +252,29 @@ body {
         }
       }
     }
+
+    &.utils {
+      a {
+        background: $primary;
+        border-radius: 5px;
+      }
+
+      div[class*='m-'] {
+        border: 1px solid rgba($primary, 0.4);
+      }
+
+      .relative {
+        height: 15rem;
+        width: 80%;
+        background: $primary;
+        .absolute {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: #fff;
+        }
+      }
+    }
   }
 }
 
@@ -234,6 +283,10 @@ footer.footer {
   h1 {
     font-weight: 300;
     font-size: 2.4rem;
+
+    @include max-sm {
+      font-size: 1.4rem;
+    }
 
     .footer-author {
       font-weight: 400;

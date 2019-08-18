@@ -44,7 +44,7 @@
               <li class="mt-5"><a href="#sizes">Sizes</a></li>
               <li class="mt-5"><a href="#flexbox">Flexbox</a></li>
               <li class="mt-5"><a href="#grid">Grid</a></li>
-              <li class="mt-5"><a href="#utlis">Utils</a></li>
+              <li class="mt-5"><a href="#utils">Utils</a></li>
             </ul>
           </div>
         </div>
@@ -784,7 +784,7 @@ brwoser to see it)
                <div class="grid-column xs-12 md-6 lg-12 d-flex f-center">12 Columns</div>
              </div>
 
-             <div class="grid-row g-gap-5 mb-5">
+             <div class="grid-row g-gap-4 mb-5">
                <div class="grid-column xs-12 md-6 lg-4 d-flex f-center">Column gapped 1</div>
                <div class="grid-column xs-12 md-6 lg-4 d-flex f-center">Column gapped 2</div>
                <div class="grid-column xs-12 md-6 lg-4 d-flex f-center">Column gapped 3</div>
@@ -792,6 +792,214 @@ brwoser to see it)
              
             </div>
           </section>
+
+          <section
+              class="info-card displays grid-column xs-12 mb-10"
+              id="utils"
+            >
+              <h1 class="mb-5">Utils</h1>
+
+              <p class="mb-5">
+                Utility classes are always needed, they can be used to rapidly modify the styles of an element with a class.
+
+                Grid Row CSS provides these utility classes to help you make modular and reusable elements.
+              </p>
+
+              <h2 class="mb-5">Paddings</h2>
+
+              <p class="mb-5">
+                padding classes are used to add padding to the elements based on the selected number.
+
+                They go form 1 through 10, and can be set for any side.
+
+                <br>
+                <br>
+
+                E.g: p-5 -> padding: 5 * 0.5rem;
+              </p>
+
+              <ul class="mb-5">
+                <li class="mt-5">
+                  <span class="code-text">.p-{$number}:</span> Sets the padding of the element
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.pt-{$number}:</span> Sets the padding top of the element
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.pb-{$number}:</span> Sets the padding bottom of the element
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.pr-{$number}:</span> Sets the padding right of the element
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.pl-{$number}:</span> Sets the padding left of the element
+                </li>
+              </ul>
+
+              <h2 class="mb-5">Margins</h2>
+
+              <p class="mb-5">
+                margin classes are used to add margin to the elements based on the selected number.
+
+                They go form 1 through 10, and can be set for any side.
+
+                <br>
+                <br>
+
+                E.g: m-5 -> margin: 5 * 0.5rem;
+              </p>
+
+              <ul class="mb-5">
+                <li class="mt-5">
+                  <span class="code-text">.m-{$number}:</span> Sets the margin of the element
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.mt-{$number}:</span> Sets the margin top of the element
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.mb-{$number}:</span> Sets the margin bottom of the element
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.mr-{$number}:</span> Sets the margin right of the element
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.ml-{$number}:</span> Sets the margin left of the element
+                </li>
+              </ul>
+
+
+              <h2 class="mb-5">Auto margins</h2>
+
+              <p class="mb-5">
+               Sometimes you need to move an element with a margin auto.
+              </p>
+
+              <ul class="mb-5">
+                <li class="mt-5">
+                  <span class="code-text">.ml-auto:</span> Sets the margin left to auto
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.mr-auto:</span> Sets the margin right to auto
+                </li>
+              </ul>
+
+              <h2 class="mb-5">Vertical align</h2>
+
+              <p class="mb-5">
+               Inline-block elements often have issues with how they show on the browser, this class can help you that annoying white-space on those elements. 
+              </p>
+
+              <ul class="mb-5">
+                <li class="mt-5">
+                  <span class="code-text">.vertical-a-top:</span> Sets the vertical align to top
+                </li>
+              </ul>
+
+
+              <h2 class="mb-5">Positioning</h2>
+
+              <p class="mb-5">
+               The following are classes to define the position of elements. 
+              </p>
+
+              <ul class="mb-5">
+                <li class="mt-5">
+                  <span class="code-text">.pos-absolute:</span> Sets the position to absolute
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.pos-relative:</span> Sets the position to relative
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.pos-fixed:</span> Sets the position to fixed
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.pos-sticky:</span> Sets the position to sticky
+                </li>
+              </ul>
+
+
+              <h2 class="mb-5">Typography</h2>
+
+              <p class="mb-5">
+               Classes to set different useful aspects of typography
+              </p>
+
+              <ul class="mb-5">
+                <li class="mt-5">
+                  <span class="code-text">.text-white:</span> Sets the text to color white
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.text-black:</span> Sets the text to color #333
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.text-center:</span> Sets the text to align center
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.text-left:</span> Sets the text to align left
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.text-right:</span> Sets the text to align right
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.text-upper:</span> Sets the text to uppercase
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.text-lower:</span> Sets the text to lowercase
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.text-capital:</span> Capitalize the text
+                </li>
+                <li class="mt-5">
+                  <span class="code-text">.text-d-none:</span> Sets the text decoration to none
+                </li>
+              </ul>
+
+
+              <h2 class="mb-5">Lists</h2>
+
+              <p class="mb-5">
+               This class can help you removing the default styling for lists.
+              </p>
+
+              <ul class="mb-5">
+                <li class="mt-5">
+                  <span class="code-text">.list-s-none:</span> Sets the list-style to none
+                </li>
+                
+              </ul>
+
+              <h2 class="mb-5">Examples</h2>
+
+              <pre class="mb-5 d-block">
+              <code class="language-markup">
+&lt;div class="is-fullwidth">Full width Element&lt;/div>
+&lt;div class="is-fullheight">Full height Element&lt;/div>
+&lt;div class="is-half-vh">Half viewport height Element&lt;/div>
+&lt;div class="is-full-vh">Full viewport height Element&lt;/div>
+&lt;div class="is-full-size">Full height and width Element&lt;/div>
+&lt;div class="is-half-size-vh">
+  Half viewport height and full width Element
+&lt;/div>
+&lt;div class="is-full-size-vh">
+  Full viewport height and full width Element
+&lt;/div>
+              </code>
+            </pre>
+
+              <div class="example utils" id="utils-examples">
+                <a href="javascript:void(0)" class="d-inline-block p-2 text-d-none text-white">Anchor element without text decoration and with padding</a>
+
+                <div class="m-3">Div with margins</div>
+
+               <div class="pos-relative relative text-white text-center">
+                 Relative element
+                 <div class="pos-absolute absolute text-center text-black">
+                   Absolute box within a relative element
+                 </div>
+               </div>
+    
+              </div>
+            </section>
 
           </div>
         </div>
