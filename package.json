@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node-sass -w styles.scss css/styles.css",
-    "compile": "node-sass gridrow.scss css/gridrow.css",
-    "optimize": "postcss css/gridrow.css > css/gridrow.min.css",
-    "build": "npm-run-all compile optimize"
+    "compile": "node-sass gridrow.scss dist/gridrow.css",
+    "optimize": "postcss dist/gridrow.css > dist/gridrow.min.css",
+    "compile2": "node-sass styles.scss css/styles.css",
+    "optimize2": "postcss css/styles.css > css/styles.min.css",
+    "build": "npm-run-all compile compile2 optimize optimize2"
   },
   "author": "",
   "license": "ISC",
